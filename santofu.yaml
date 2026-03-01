@@ -1,0 +1,7 @@
+version: 3
+projects:
+  - name: local-demo
+    dir: stacks/local-demo
+  - name: local-demo-staging
+    dir: stacks/local-demo
+    workspace: staging
