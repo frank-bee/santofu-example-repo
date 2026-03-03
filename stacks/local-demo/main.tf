@@ -38,6 +38,11 @@ resource "null_resource" "example" {
   }
 }
 
+resource "local_file" "info" {
+  content  = "Version: v2\nTimestamp: managed by Santofu\n"
+  filename = "${path.module}/output/info.txt"
+}
+
 output "file_path" {
   description = "Path to the generated file"
   value       = local_file.hello.filename
