@@ -20,7 +20,7 @@ variable "environment" {
 variable "greeting" {
   description = "A greeting message to write to the file"
   type        = string
-  default     = "Hello from Santofu! (v2)"
+  default     = "Hello from Santofu! (v3)"
 }
 
 resource "local_file" "hello" {
@@ -39,7 +39,7 @@ resource "null_resource" "example" {
 }
 
 resource "local_file" "info" {
-  content  = "Version: v2\nTimestamp: managed by Santofu\n"
+  content  = "Version: v3\nTimestamp: managed by Santofu\n"
   filename = "${path.module}/output/info.txt"
 }
 
