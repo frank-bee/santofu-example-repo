@@ -20,7 +20,7 @@ variable "environment" {
 variable "greeting" {
   description = "A greeting message to write to the file"
   type        = string
-  default     = "Hello from Santofu! (updated)"
+  default     = "Hello from Santofu! (v2)"
 }
 
 resource "local_file" "hello" {
